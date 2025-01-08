@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menjarsFragment"
+        android:icon="@drawable/ic_food"
+        android:title="Comidas" />
+    <item
+        android:id="@+id/begudesFragment"
+        android:icon="@drawable/ic_drink"
+        android:title="Bebidas" />
+    <item
+        android:id="@+id/postresFragment"
+        android:icon="@drawable/ic_dessert"
+        android:title="Postres" />
+    <item
+        android:id="@+id/pagamentFragment"
+        android:icon="@drawable/ic_payment"
+        android:title="Pago" />
+</menu>

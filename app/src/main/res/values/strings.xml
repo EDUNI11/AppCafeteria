@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">App Cafeteria</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="register">Registrar</string>
+    <string name="home">Inicio</string>
+    <string name="menjars">Comidas</string>
+    <string name="begudes">Bebidas</string>
+    <string name="postres">Postres</string>
+    <string name="pagament">Pago</string>
+</resources>

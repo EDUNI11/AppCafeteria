@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.eduni.appcafeteria.ui.fragments.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_login_to_menjars"
+            app:destination="@id/menjarsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.eduni.appcafeteria.ui.fragments.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menjarsFragment"
+        android:name="com.eduni.appcafeteria.ui.fragments.subfragments.MenjarsFragment"
+        android:label="Comidas"
+        tools:layout="@layout/fragment_menjars">
+        <action
+            android:id="@+id/action_menjarsFragment_to_nextFragment"
+            app:destination="@id/begudesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/begudesFragment"
+        android:name="com.eduni.appcafeteria.ui.fragments.subfragments.BegudesFragment"
+        android:label="Bebidas"
+        tools:layout="@layout/fragment_begudes">
+        <action
+            android:id="@+id/action_begudesFragment_to_nextFragment"
+            app:destination="@id/postresFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/postresFragment"
+        android:name="com.eduni.appcafeteria.ui.fragments.subfragments.PostresFragment"
+        android:label="Postres"
+        tools:layout="@layout/fragment_postres">
+        <action
+            android:id="@+id/action_postresFragment_to_nextFragment"
+            app:destination="@id/pagamentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pagamentFragment"
+        android:name="com.eduni.appcafeteria.ui.fragments.subfragments.PagamentFragment"
+        android:label="Pago"
+        tools:layout="@layout/fragment_pagament">
+        <action
+            android:id="@+id/action_pagamentFragment_to_nextFragment"
+            app:destination="@id/menjarsFragment" />
+    </fragment>
+
+</navigation>
